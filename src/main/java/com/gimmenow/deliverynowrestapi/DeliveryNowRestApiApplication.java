@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Rizzo
  */
 @SpringBootApplication
-public class DeliveryRestApiApplication {
+public class DeliveryNowRestApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DeliveryRestApiApplication.class, args);
+        SpringApplication.run(DeliveryNowRestApiApplication.class, args);
     }
 
 }
