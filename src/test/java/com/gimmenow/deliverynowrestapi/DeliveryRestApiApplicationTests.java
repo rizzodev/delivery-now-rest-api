@@ -1,4 +1,4 @@
-package com.gimmenow.deliveryrestapi;
+package com.gimmenow.deliverynowrestapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

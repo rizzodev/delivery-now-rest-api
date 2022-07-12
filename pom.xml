@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.gimmenow</groupId>
-    <artifactId>delivery-rest-api</artifactId>
+    <artifactId>delivery-now-rest-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>delivery-rest-api</name>
+    <name>delivery-now-rest-api</name>
     <description>This is Technical Test Project from Gimmenow</description>
     <properties>
         <java.version>1.8</java.version>

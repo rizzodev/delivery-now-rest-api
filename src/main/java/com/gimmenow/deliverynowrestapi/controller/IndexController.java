@@ -1,4 +1,4 @@
-package com.gimmenow.deliveryrestapi.controller;
+package com.gimmenow.deliverynowrestapi.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,14 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/users")
-public class UserController {
+@RequestMapping("/api")
+public class IndexController {
 
     @GetMapping
-    public ResponseEntity<String> getUsernameList() {
-
-        return ResponseEntity.ok(
-                "ok");
+    public ResponseEntity<String> index() {
+        return ResponseEntity.ok("Welcome to Home");
     }
 
 }

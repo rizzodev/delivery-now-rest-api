@@ -1,4 +1,4 @@
-package com.gimmenow.deliveryrestapi;
+package com.gimmenow.deliverynowrestapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
