@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
@@ -19,7 +20,9 @@ import software.amazon.awssdk.services.cognitoidentityprovider.model.ListUsersRe
 @Service
 public class UserService {
 
-    private final String POOL_ID = "us-east-1_29wnaVf1M";
+    @Value("${aws.user-pool.id}")
+    private String POOL_ID;
+    
     private static CognitoIdentityProviderClient cognitoClient;
     private static final Logger LOGGER = LoggerFactory.getLogger(UserService.class);
 
@@ -41,7 +44,6 @@ public class UserService {
     }
 
     public boolean createUser(User user) {
-
         if (!isUserExist(user.getUsername())) {
 
             try {

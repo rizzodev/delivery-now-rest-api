@@ -19,15 +19,15 @@ public class UserServiceTest {
         boolean expected = true;
         boolean result = userService.isUserExist(username);
 
-//        System.out.println(result);
+        System.out.println(result);
         assertEquals(expected, result);
     }
 
     @Test
     public void createUserTest() {
-        boolean expected = true;
+        boolean expected = false;
         User u = User.builder()
-                .username("rizzo4")
+                .username("rizzodevs")
                 .name("rizzo name")
                 .email("mzo.jobs@gmail.com")
                 .password("@123Abc@")
@@ -35,7 +35,7 @@ public class UserServiceTest {
                 .build();
 
         boolean result = userService.createUser(u);
-//        System.out.println("user created : " + result);
+        System.out.println("user created : " + result);
         assertEquals(expected, result);
     }
 
