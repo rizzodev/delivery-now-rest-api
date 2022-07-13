@@ -1,4 +1,4 @@
-package com.gimmenow.deliverynowrestapi.swagger;
+package com.gimmenow.deliverynowrestapi.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
