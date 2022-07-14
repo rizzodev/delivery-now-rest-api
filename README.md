@@ -1,5 +1,3 @@
-## [DOC] Project deployment step by step (have done, deployed to EC2 instance) :
-
 ### For easy test, can access this link :
 https://18.206.146.244/
 or DNS : 
@@ -13,6 +11,8 @@ https://18.206.146.244/swagger-ui/
 
 https://18.206.146.244:8000/
 
+
+## [DOCUMENTATION] Project deployment step by step (have done, deployed to EC2 instance) :
 
 ### Example project current directory in local machine
 
