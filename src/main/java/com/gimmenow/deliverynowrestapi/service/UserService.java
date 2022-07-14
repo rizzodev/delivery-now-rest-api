@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
 import software.amazon.awssdk.auth.credentials.SystemPropertyCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.cognitoidentityprovider.CognitoIdentityProviderClient;
@@ -89,14 +90,10 @@ public class UserService {
 
     public static CognitoIdentityProviderClient getCognitoClient() {
         if (cognitoClient == null) {
-
-            //set as system variable for testing purpose
-            System.setProperty("aws.accessKeyId", "AKIAZGTOBVK6XLCW44XT");
-            System.setProperty("aws.secretAccessKey", "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");
-
+            
             cognitoClient = CognitoIdentityProviderClient.builder()
                     .region(Region.US_EAST_1)
-                    .credentialsProvider(SystemPropertyCredentialsProvider.create())
+                    .credentialsProvider(ProfileCredentialsProvider.create())
                     .build();
         }
 
