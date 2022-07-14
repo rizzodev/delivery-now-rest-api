@@ -55,23 +55,6 @@ docker -v
 docker pull rizzoirfan/delivery-now-rest-api.jar:latest
 docker login
 
-->before run the application, required credentials for aws, so need upload credential file to the server, well this just optional cause there is another way to use environmanet variable, but in this case we just use aws credential file, to do this in putty :
-
-mkdir .aws
-nano credentials
-
--and copy paste :
-
-
-[default]
-
-aws_access_key_id = AKIAZGTOBVK6XLCW44XT
-
-aws_secret_access_key = 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
-
-
--press ctrl+x
-
 ### next step now to run the docker images :
 
 docker run --rm --name delivery-now-rest-api -p 80:9091 -p 8000:8000 rizzoirfan/delivery-now-rest-api.jar
