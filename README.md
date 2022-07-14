@@ -11,6 +11,7 @@ https://18.206.146.244/swagger-ui/
 
 https://18.206.146.244:8000/
 
+==========================================================================================
 
 ## [DOC] Project deployment step by step (have done, deployed to EC2 instance) :
 
