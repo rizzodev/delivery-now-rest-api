@@ -47,12 +47,19 @@ connect through putty, use .pem / .ppk file.
 
 ### Inside putty require installation for docker : 
 
+
 sudo -i
+
 sudo yum install docker 
+
 sudo service docker start
+
 docker -v
+
 docker pull rizzoirfan/delivery-now-rest-api.jar:latest
+
 docker login
+
 
 ### next step now to run the docker images :
 
