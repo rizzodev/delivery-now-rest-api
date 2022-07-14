@@ -62,10 +62,9 @@ mkdir .aws
 nano credentials
 
 -and copy paste :
+
 [default]
-
 aws_access_key_id = AKIAZGTOBVK6XLCW44XT
-
 aws_secret_access_key = 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
 
 
