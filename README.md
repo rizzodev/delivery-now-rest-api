@@ -1,15 +1,15 @@
 ## For easy test, can access this link :
 https://18.206.146.244/
 or DNS : 
-https://ec2-18-206-146-244.compute-1.amazonaws.com/
+http://ec2-18-206-146-244.compute-1.amazonaws.com/
 
 ### All api can be seen thru swagger-ui:
 
-https://18.206.146.244/swagger-ui/
+http://18.206.146.244/swagger-ui/
 
 ### Jobrunr dashboard access using port 8000
 
-https://18.206.146.244:8000/
+http://18.206.146.244:8000/
 
 ==========================================================================
 
