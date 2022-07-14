@@ -2,7 +2,6 @@ package com.gimmenow.deliverynowrestapi.controller;
 
 import com.gimmenow.deliverynowrestapi.dto.OpenWeather;
 import com.gimmenow.deliverynowrestapi.service.WeatherService;
-import io.micrometer.core.ipc.http.HttpSender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
