@@ -1,8 +1,7 @@
-# delivery-rest-api
+### For easy test, can access this link :
 
-<<<<<<< HEAD
-My AWS Java SDK reference (very helpful) :
-=======
+https://18.206.146.244/
+
 ### All api can be seen thru swagger-ui:
 
 http://18.206.146.244/swagger-ui/
@@ -71,8 +70,5 @@ docker run --rm --name delivery-now-rest-api -p 80:9091 -p 8000:8000 rizzoirfan/
 
 AWS Java SDK reference :
 
-### [Quick Start]
->>>>>>> 984b343fb24cc8da5e5e43048c5b4960a6c148ce
-
-#Quick Start
+# [Quick Start]
 https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-started.html
