@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.gimmenow</groupId>
     <artifactId>delivery-now-rest-api</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>delivery-now-rest-api</name>
     <description>This is Technical Test Project from Gimmenow</description>
     <properties>

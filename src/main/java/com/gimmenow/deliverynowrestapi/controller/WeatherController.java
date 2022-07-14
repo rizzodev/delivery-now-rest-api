@@ -29,10 +29,4 @@ public class WeatherController {
         service.runWeatherJobByCity(city);
         return ResponseEntity.ok("Job Executed !");
     }
-    
-//    @PostMapping("/auth/run-job")
-//    public ResponseEntity<String> runAuthJob(@RequestParam String city) {
-//        service.runWeatherJobByCity(city);
-//        return ResponseEntity.ok("Job Executed !");
-//    }
 }
