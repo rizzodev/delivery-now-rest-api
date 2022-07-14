@@ -36,7 +36,6 @@ docker run --name delivery-now-rest-api -p 80:9091 -p 8000:8000 delivery-now-res
 docker tag local-image:tagname new-repo:tagname
 docker push new-repo:tagname
 
-so :
 docker tag delivery-now-rest-api:latest rizzoirfan/delivery-now-rest-api.jar:latest
 docker push rizzoirfan/delivery-now-rest-api.jar:latest
 
