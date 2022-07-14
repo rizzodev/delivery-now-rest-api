@@ -4,7 +4,7 @@ https://18.206.146.244/
 
 ### All api can be seen thru swagger-ui:
 
-http://18.206.146.244/swagger-ui/
+http://18.206.146.244/swagger-ui/ 
 
 ### Jobrunr dashboard access using port 8000
 
