@@ -27,9 +27,9 @@ docker run -p <exposed:local> image
 
 ### So docker run will be like this :
 
-docker run --rm --name delivery-now-rest-api -p 80:9091 -p 8000:8000 delivery-now-rest-api
+docker run --name delivery-now-rest-api -p 80:9091 -p 8000:8000 delivery-now-rest-api
 
-added --rm to destroy after container stop, --name for naming and here we are exposing port 80 as our main application, and 8000 as jobrunr.
+--name for naming and here we are exposing port 80 as our main application, and 8000 as jobrunr.
 
 ### Push docker image to docker hub
 
