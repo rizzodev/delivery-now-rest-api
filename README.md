@@ -1,7 +1,5 @@
 ## For easy test, can access this link :
-https://18.206.146.244/
-or DNS : 
-http://ec2-18-206-146-244.compute-1.amazonaws.com/
+http://18.206.146.244/
 
 ### All api can be seen thru swagger-ui:
 
