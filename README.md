@@ -1,8 +1,22 @@
 # delivery-rest-api
 
-## [DOC] project deployment step by step (have done, deployed to EC2 instance) :
+## [DOC] Project deployment step by step (have done, deployed to EC2 instance) :
 
-### example project current directory in local machine
+### For easy test, can access this link :
+https://18.206.146.244/
+or DNS : 
+https://ec2-18-206-146-244.compute-1.amazonaws.com/
+
+### All api can be seen thru swagger-ui:
+
+https://18.206.146.244/swagger-ui/
+
+### Jobrunr dashboard access using port 8000
+
+https://18.206.146.244:8000/
+
+
+### Example project current directory in local machine
 
 D:gimmenow/delivery-now-rest-api
 
@@ -60,21 +74,6 @@ next step now to run the docker images :
 docker run --rm --name delivery-now-rest-api -p 80:9091 -p 8000:8000 rizzoirfan/delivery-now-rest-api.jar
 
 ==Application started===.
-
-### For easy test, can access this link :
-
-https://18.206.146.244/
-or DNS : 
-https://ec2-18-206-146-244.compute-1.amazonaws.com/
-
-### all api can be seen thru swagger-ui:
-
-https://18.206.146.244/swagger-ui/
-
-### jobrunr dashboard access using port 8000
-
-https://18.206.146.244:8000/
-
 
 AWS Java SDK reference :
 
