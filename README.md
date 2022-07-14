@@ -73,7 +73,8 @@ aws_secret_access_key = J3ogDLqkhIB6LIGPtUQPVT7AXlOWaukcmIJMUuLx
 
 -press ctrl+x
 
-next step now to run the docker images :
+### next step now to run the docker images :
+
 docker run --rm --name delivery-now-rest-api -p 80:9091 -p 8000:8000 rizzoirfan/delivery-now-rest-api.jar
 
 ==Application started===.
