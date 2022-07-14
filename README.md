@@ -1,22 +1,27 @@
 # delivery-rest-api
 
-#[DOC] project deployment step by step (have done, deployed to EC2 instance) :
+## [DOC] project deployment step by step (have done, deployed to EC2 instance) :
 
-#example project current directory in local machine
+### example project current directory in local machine
+
 D:gimmenow/delivery-now-rest-api
 
-#build docker images
+### Build docker images
+
 docker build -t delivery-now-rest-api:latest .
 
-#for testing docker run, use this settings
+### For testing docker run, use this settings
+
 docker run -p <exposed:local> image
 
-#so docker run will be like this :
+### So docker run will be like this :
+
 docker run --rm --name delivery-now-rest-api -p 80:9091 -p 8000:8000 delivery-now-rest-api
 
 added --rm to destroy after container stop, --name for naming and here we are exposing port 80 as our main application, and 8000 as jobrunr.
 
-#push docker image to docker hub
+### Push docker image to docker hub
+
 docker tag local-image:tagname new-repo:tagname
 docker push new-repo:tagname
 
@@ -26,10 +31,12 @@ docker push rizzoirfan/delivery-now-rest-api.jar:latest
 
 After successfull pushing the images to docker hub, now we can connect to AWS EC2 instance.
 
-#EC2Instance deployment 
+### EC2Instance deployment 
+
 connect through putty, use .pem / .ppk file.
 
-#inside putty require installation for docker : 
+### Inside putty require installation for docker : 
+
 sudo -i
 sudo yum install docker 
 sudo service docker start
@@ -54,20 +61,24 @@ docker run --rm --name delivery-now-rest-api -p 80:9091 -p 8000:8000 rizzoirfan/
 
 ==Application started===.
 
-#for easy test, can access this link :
+### For easy test, can access this link :
+
 https://18.206.146.244/
 or DNS : 
 https://ec2-18-206-146-244.compute-1.amazonaws.com/
 
-#all api can be seen thru swagger-ui:
+### all api can be seen thru swagger-ui:
+
 https://18.206.146.244/swagger-ui/
 
-#jobrunr dashboard access using port 8000
+### jobrunr dashboard access using port 8000
+
 https://18.206.146.244:8000/
 
 
 AWS Java SDK reference :
 
-#[Quick Start]
+### [Quick Start]
+
 https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-started.html
 
