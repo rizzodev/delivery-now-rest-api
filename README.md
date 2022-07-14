@@ -7,19 +7,23 @@
 
 D:gimmenow/delivery-now-rest-api
 
+
 ### Build docker images
 
 docker build -t delivery-now-rest-api:latest .
 
+
 ### For testing docker run, use this settings
 
 docker run -p [exposedport]:[localport] image
+
 
 ### So docker run will be like this :
 
 docker run --name delivery-now-rest-api -p 80:9091 -p 8000:8000 delivery-now-rest-api
 
 --name for naming and here we are exposing port 80 as our main application, and 8000 as jobrunr.
+
 
 ### Push docker image to docker hub
 
@@ -38,6 +42,7 @@ After successfull pushing the images to docker hub, now we can connect to AWS EC
 ### EC2Instance deployment 
 
 connect through putty, use .pem / .ppk file.
+
 
 ### Inside putty require installation for docker : 
 
@@ -62,6 +67,7 @@ docker run --rm --name delivery-now-rest-api -p 80:9091 -p 8000:8000 rizzoirfan/
 ==Application started===.
 
 AWS Java SDK reference :
+
 
 ## [Quick Start]
 https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-started.html
