@@ -34,13 +34,17 @@ docker run --name delivery-now-rest-api -p 80:9091 -p 8000:8000 delivery-now-res
 
 ### Push docker image to docker hub
 
+
 docker tag local-image:tagname new-repo:tagname
+
 docker push new-repo:tagname
 
 docker tag delivery-now-rest-api:latest rizzoirfan/delivery-now-rest-api.jar:latest
+
 docker push rizzoirfan/delivery-now-rest-api.jar:latest
 
 After successfull pushing the images to docker hub, now we can connect to AWS EC2 instance.
+
 
 ### EC2Instance deployment 
 
