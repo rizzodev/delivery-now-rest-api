@@ -13,7 +13,7 @@ docker build -t delivery-now-rest-api:latest .
 
 ### For testing docker run, use this settings
 
-docker run -p <[exposedport]:[localport]> image
+docker run -p [exposedport]:[localport] image
 
 ### So docker run will be like this :
 
