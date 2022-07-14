@@ -1,5 +1,3 @@
-# delivery-rest-api
-
 ## [DOC] Project deployment step by step (have done, deployed to EC2 instance) :
 
 ### For easy test, can access this link :
